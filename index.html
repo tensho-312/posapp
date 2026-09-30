@@ -441,7 +441,14 @@
   appId: "1:955295691082:web:f2a83c95082307acc391b3",
   measurementId: "G-DJ6RPHXPEH"
 };
-
+const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : {
+  apiKey: "YOUR_API_KEY",
+  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
+  projectId: "YOUR_PROJECT_ID",
+  storageBucket: "YOUR_PROJECT_ID.appspot.com",
+  messagingSenderId: "1234567890",
+  appId: "1:1234567890:web:abcdef123456"
+};
         <!-- Cash received & Change (Only show if Cash method selected) -->
         <div id="cash-input-section" class="space-y-3">
           <label class="block text-xs font-bold text-slate-700">お預かり金額 (円)</label>
